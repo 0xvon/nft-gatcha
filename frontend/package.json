@@ -1,0 +1,32 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type": "npx typechain --target ethers-v5 --outDir types/abis abis/*.json"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@rainbow-me/rainbowkit": "^0.12.5",
+    "ethers": "^5.5.2",
+    "framer-motion": "^10.10.0",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typechain": "^4.0.3",
+    "typechain-target-ethers-v5": "^5.0.1",
+    "wagmi": "^0.12.8"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.31",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "typescript": "5.0.3"
+  }
+}

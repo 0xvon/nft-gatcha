@@ -1,0 +1,20 @@
+node_modules
+.DS_Store/
+.env
+
+# zk build files
+zk/build/circuit.*
+
+# zk ptau files
+*.ptau
+*.zkey
+verification_key.json
+
+# zk proof files
+proof.json
+public.json
+witness.wtns
+
+# hardhat
+artifacts
+cache

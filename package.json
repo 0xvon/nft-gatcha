@@ -1,0 +1,32 @@
+{
+  "name": "nft-gatcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "type": "npx hardhat typechain",
+    "test": "npx hardhat test",
+    "zk": "npx circom zk/circuit.circom --r1cs zk/build/circuit.r1cs --wasm zk/build/circuit.wasm --sym zk/build/circuit.sym",
+    "proof": "sh zk.sh",
+    "verifier": "npx snarkjs generateverifier"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@openzeppelin/contracts": "^4.8.2",
+    "circom": "^0.5.46",
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.6.10"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@typechain/hardhat": "^6.1.5",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.13.0",
+    "hardhat-circom": "^3.3.2"
+  }
+}
