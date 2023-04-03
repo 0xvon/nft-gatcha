@@ -1,4 +1,4 @@
-# zkSNARK Hide And Seek
+# zkSNARK NFT Gatcha
 
 This is zkSNARK circuit and verifier contract.
 
